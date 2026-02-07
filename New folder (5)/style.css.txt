@@ -1,0 +1,105 @@
+body{
+margin:0;
+font-family:Poppins, sans-serif;
+background:#fff0f6;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* Pages */
+
+.page{
+position:absolute;
+width:100%;
+min-height:100vh;
+opacity:0;
+pointer-events:none;
+transition:1s;
+padding:20px;
+box-sizing:border-box;
+}
+
+.page.active{
+opacity:1;
+pointer-events:all;
+}
+
+/* Images */
+
+.main-gif,
+.loading-gif,
+.gallery img,
+.note img{
+max-width:85%;
+border-radius:20px;
+margin-top:20px;
+}
+
+/* Buttons */
+
+button{
+padding:12px 25px;
+border:none;
+background:#ff4da6;
+color:white;
+font-size:16px;
+border-radius:12px;
+margin-top:20px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ff1a8c;
+}
+
+/* Inputs */
+
+input{
+padding:12px;
+margin:10px;
+border-radius:10px;
+border:1px solid #ccc;
+width:200px;
+}
+
+/* Game Output */
+
+#gameOutput{
+margin-top:20px;
+font-size:18px;
+}
+
+/* Gallery */
+
+.gallery{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.gallery-item{
+margin:25px 0;
+}
+
+/* Calligraphy Style */
+
+.calligraphy{
+font-family:'Great Vibes', cursive;
+font-size:32px;
+color:#ff4da6;
+line-height:1.8;
+}
+
+.introText{
+font-size:42px;
+margin-top:15px;
+}
+
+/* Note */
+
+.note{
+max-width:700px;
+margin:auto;
+padding:20px;
+font-size:30px;
+}

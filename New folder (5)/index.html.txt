@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hug Day 💗</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- Calligraphy Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Intro Page -->
+<section id="intro" class="page active">
+    <img src="assets/intro.gif" class="main-gif">
+
+    <!-- ✅ Calligraphy Quote -->
+    <h1 class="calligraphy introText">
+        brewing some magic 🧙🏻‍♀️🔮🪄..
+    </h1>
+
+    <img src="assets/loading.gif" class="loading-gif">
+</section>
+
+
+<!-- Game Page -->
+<section id="game" class="page">
+    <h1>💖 Hug Day Mini Game 💖</h1>
+
+    <input id="player" placeholder="Enter your name">
+    <input id="numHugs" type="number" placeholder="How many hugs to send?" min="1">
+
+    <button onclick="startGame()">Start Hugging 🤗</button>
+
+    <div id="gameOutput"></div>
+
+    <button class="nextBtn" onclick="showPage('gallery')">Next ➡️</button>
+</section>
+
+
+<!-- Gallery Page -->
+<section id="gallery" class="page">
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="assets/image1.jpg">
+<p>us 💗🫂!?</p>
+</div>
+
+<div class="gallery-item">
+<img src="assets/image2.jpg">
+<p>me and my jigar ka tukda 😋✨🌙</p>
+</div>
+
+</div>
+
+<button class="nextBtn" onclick="showPage('final'); startTyping()">Next ➡️</button>
+
+</section>
+
+
+<!-- Final Page -->
+<section id="final" class="page">
+
+<div class="note calligraphy">
+
+<p id="loveLetter"></p>
+
+<img src="assets/final.gif">
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
